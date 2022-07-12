@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  nginx:
+    image: nginx:1.23
+    container_name: nginx
+    #environment:
+    volumes:
+      - ./.data/elasticsearch:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200

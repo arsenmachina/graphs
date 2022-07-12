@@ -4,7 +4,7 @@ let usg = []
 let time = []
 let labels = [];
 $.ajax({
-        url: "gpu_usg.json",
+        url: "gpu_usg.txt",
         dataType: "text",
         async: false,
         success: function(msg){
@@ -39,7 +39,7 @@ $.ajax({
 
 
 
-
+  usg.pop();
 
 
 
